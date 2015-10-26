@@ -7,7 +7,7 @@
     
 
     <title>
-      归档 
+      App store上架遇到的那些坑 | Neil’s Blog 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,16 +15,23 @@
       <meta name="author" content="Neil Chan">
     
     
+      <meta name="description" content="上架被打回来三四次。老板差点儿发飙。这里总结下app上架遇到的那些坑。
+17.2 - Apps that require users to share personal information, such as email address and date of birth, in order to function will be rejected一开始选用了手机注册，被打回来。然后修改，改成用">
+    
 
-    <meta name="description" content="一名iOS开发者。喜欢有趣、美好的事物。喜欢音乐，电影与运动">
-<meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+    <meta name="description" content="上架被打回来三四次。老板差点儿发飙。这里总结下app上架遇到的那些坑。
+17.2 - Apps that require users to share personal information, such as email address and date of birth, in order to function will be rejected一开始选用了手机注册，被打回来。然后修改，改成用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="App store上架遇到的那些坑 | Neil’s Blog">
+<meta property="og:url" content="http://yoursite.com/2015/10/26/App-store上架遇到的那些坑/index.html">
 <meta property="og:site_name" content="Neil’s Blog">
-<meta property="og:description" content="一名iOS开发者。喜欢有趣、美好的事物。喜欢音乐，电影与运动">
+<meta property="og:description" content="上架被打回来三四次。老板差点儿发飙。这里总结下app上架遇到的那些坑。
+17.2 - Apps that require users to share personal information, such as email address and date of birth, in order to function will be rejected一开始选用了手机注册，被打回来。然后修改，改成用">
+<meta property="og:updated_time" content="2015-10-26T02:18:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="归档">
-<meta name="twitter:description" content="一名iOS开发者。喜欢有趣、美好的事物。喜欢音乐，电影与运动">
+<meta name="twitter:title" content="App store上架遇到的那些坑 | Neil’s Blog">
+<meta name="twitter:description" content="上架被打回来三四次。老板差点儿发飙。这里总结下app上架遇到的那些坑。
+17.2 - Apps that require users to share personal information, such as email address and date of birth, in order to function will be rejected一开始选用了手机注册，被打回来。然后修改，改成用">
     
     
     
@@ -157,76 +164,40 @@ classes that you can use:
         <div class="content-wrapper__inner entry">
             
 
+  <article class="post-container post-container--single">
 
-   <!-- do nothing -->
-
-
-<div class="main-post-list">
-    <ol class="post-list">
+    <header class="post-header">
     
-    
-    <li>
+      
+      <div class="post-meta">
+        <time datetime="2015-10-26" class="post-meta__date date">2015-10-26</time> &#8226; 
 
-      <h2 class="post-list__post-title post-title"><a href="/2015/10/26/App-store上架遇到的那些坑/" title="link to App store上架遇到的那些坑">App store上架遇到的那些坑</a></h2>
+        <span class="post-meta__tags tags">
 
-      <p class="excerpt">
-        
-      </p>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-10-26" class="post-list__meta--date date">2015-10-26</time> &#8226; 
-
-        <span class="post-list__meta--tags tags">
-          <font class="categories">
+            <font class="categories">
+              
+            </font>
             
-          </font>
-          
 
         </span>
       </div>
+      
 
-      <hr class="post-list__divider" />
-    </li>
+      <h1 class="post-title">App store上架遇到的那些坑</h1>
+    </header>
+
+    <section class="post">
+      <p>上架被打回来三四次。老板差点儿发飙。这里总结下app上架遇到的那些坑。</p>
+<h3 id="17-2_-_Apps_that_require_users_to_share_personal_information,_such_as_email_address_and_date_of_birth,_in_order_to_function_will_be_rejected">17.2 - Apps that require users to share personal information, such as email address and date of birth, in order to function will be rejected</h3><p>一开始选用了手机注册，被打回来。然后修改，改成用户名注册不需要其它信息，又被打回来。我的应用从头到尾都没有任何一点收集用户信息的东西。然后我考虑了下可能是苹果那边认为我的应用里面的东西都是不需要依赖注册的，最后没办法，去掉帐号注册功能，换成后台随机生成帐号密码。</p>
+<h3 id="2-10_-_iPhone_Apps_must_also_run_on_iPad_without_modification,_at_iPhone_resolution,_and_at_2X_iPhone_3GS_resolution">2.10 - iPhone Apps must also run on iPad without modification, at iPhone resolution, and at 2X iPhone 3GS resolution</h3><p>上了一次被打回来，说是无法在iPad上运行，我的应用本来就是选定了只支持在iPhone上运行。然后检查了一下，发现在iPad上有一些页面是会被遮挡住。这里有个小技巧就是每次提交前选用iPad retain测试一下，一般经过iPad retain测试没问题在其它iPhone上也不会有问题。苹果那边审核一般是直接用iPad跑的。</p>
+<h3 id="10-6_-_Apple_and_our_customers_place_a_high_value_on_simple,_refined,_creative,_well_thought_through_interfaces-_They_take_more_work_but_are_worth_it-_Apple_sets_a_high_bar-_If_your_user_interface_is_complex_or_less_than_very_good,_it_may_be_rejected">10.6 - Apple and our customers place a high value on simple, refined, creative, well thought through interfaces. They take more work but are worth it. Apple sets a high bar. If your user interface is complex or less than very good, it may be rejected</h3><p>估计觉得界面太丑，这个真的是因审查人员不同而有差异。</p>
+
+    </section>
+
     
-    <li>
-
-      <h2 class="post-list__post-title post-title"><a href="/2015/10/16/Hello/" title="link to Hello">Hello</a></h2>
-
-      <p class="excerpt">
-        
-      </p>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-10-16" class="post-list__meta--date date">2015-10-16</time> &#8226; 
-
-        <span class="post-list__meta--tags tags">
-          <font class="categories">
-            
-          </font>
-          
-
-        </span>
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-  </ol>
-
-  <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
-    
-
-    <span class="pagination__page-number">Page 1 of 1</span>
-    
-    
-</nav>
+  </article>
 
 
-</div>
             <footer class="footer">
     <span class="footer__copyright">&copy; 2014. All rights reserved.</span>
     <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a> | Redesign by <a href="http://letiantian.me" title="">樂天</a></span>
